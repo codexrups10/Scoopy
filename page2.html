@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Made to Order | Scoopsy</title>
+  <link rel="stylesheet" href="made-to-order.css" />
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header class="topbar">
+    <div class="logo">🍦 Scoopsy</div>
+    <nav>
+      <a href="Scoopsy_home.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Page Layout -->
+  <div class="page">
+    <main class="icecream-section">
+      <h1>Made to Order Ice Cream</h1>
+      <p class="subtext">Handcrafted for your cravings. Select your scoop & we'll make it magic.</p>
+
+      <div class="icecream-grid">
+
+        <!-- Product Card 1 -->
+
+       <!-- Photo Ice Cream Product Card with Custom Options -->
+<div class="ice-card">
+  <h2>Photo Ice Cream</h2>
+  <p class="desc">Personalized with your photo. Perfect for memories & celebrations.</p>
+  <p><strong>₹350</strong> <span class="tag">Eggless</span></p>
+
+  <!-- Weight Selection -->
+  <label for="weight">Select Weight:</label>
+  <select id="weight" name="weight">
+    <option value="500ml">500ml</option>
+    <option value="1L">1 Litre</option>
+    <option value="2L">2 Litres</option>
+  </select><br><br>
+
+  <!-- Flavour Selection -->
+  <label for="flavour">Choose Flavour:</label>
+  <select id="flavour" name="flavour">
+    <option value="Chocolate">Chocolate</option>
+    <option value="Butterscotch">Butterscotch</option>
+    <option value="Vanilla">Vanilla</option>
+    <option value="Strawberry">Strawberry</option>
+    <option value="Custom">Other (Mention in Notes)</option>
+  </select><br><br>
+
+  <!-- Quantity -->
+  <label for="qty">Quantity:</label>
+  <input type="number" id="qty" name="qty" min="1" max="10" value="1"><br><br>
+
+  <!-- Image Upload -->
+  <label for="photo">Upload Your Image:</label><br>
+  <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+  <!-- Notes (optional) -->
+  <label for="notes">Additional Notes:</label><br>
+  <textarea id="notes" name="notes" rows="2" placeholder="Any specific message or request?"></textarea><br><br>
+
+  <!-- Final Add to Cart -->
+  <button>Add to Cart</button>
+</div>
+
+
+        <!-- Product Card 2 -->
+        <div class="ice-card">
+          <img src="o4.jpeg" alt="Minion bubblegam Magic" />
+          <h2>Minion Magic</h2>
+          <p class="desc">Blueberry & vanilla swirl with crunchy bites. A kids' favourite!</p>
+          <p><strong>₹290</strong> <span class="tag new">New</span></p>
+          <button>Add to Cart</button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="ice-card">
+          <img src="o1.jpeg" alt="Strawberry Bliss" />
+          <h2>Strawberry Bliss</h2>
+          <p class="desc">Fresh strawberry puree folded into creamy scoops. 100% pure love.</p>
+          <p><strong>₹260</strong> <span class="tag best">Bestseller</span></p>
+          <button>Add to Cart</button>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="ice-card">
+          <img src="b6.jpeg" alt="Lion Roar" />
+          <h2>Lion Roar</h2>
+          <p class="desc">Roasted almond + caramel combo for a bold dessert punch.</p>
+          <p><strong>₹390</strong></p>
+          <button>Add to Cart</button>
+        </div>
+
+      </div>
+    </main>
+
+   <!-- Sidebar Order Summary -->
+<aside class="order-summary">
+  <h3>🛒 Your Custom Order Summary</h3>
+
+  <!-- Ice Cream Name -->
+  <p><strong>Item:</strong> Photo Ice Cream</p>
+
+  <!-- Quantity -->
+  <p><strong>Quantity:</strong> 1</p>
+
+  <!-- Selected Size (Weight) -->
+  <p><strong>Weight:</strong> 1L</p>
+
+  <!-- Flavour -->
+  <p><strong>Flavour:</strong> Chocolate</p>
+
+  <!-- Uploaded Image Confirmation -->
+  <p><strong>Custom Photo:</strong> ✔️ Attached</p>
+
+  <!-- Notes -->
+  <p><strong>Note:</strong> Happy Birthday on Top</p>
+
+  <!-- Price Breakdown -->
+  <hr />
+  <p><strong>Subtotal:</strong> ₹</p>
+  <p><strong>Delivery:</strong> ₹40</p>
+  <p><strong>Total:</strong> ₹</p>
+
+  <!-- Delivery Timing -->
+  <p>📦 Estimated Delivery: 30–45 mins</p>
+
+  <!-- Payment Info -->
+  <p class="payment-note">Pay via UPI or Cash on Delivery</p>
+
+  <!-- Checkout -->
+  <button class="checkout-btn">Proceed to Checkout</button>
+</aside>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Scoopsy | Made with love 🍨</p>
+  </footer>
+</body>
+</html>

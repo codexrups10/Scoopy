@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoopsy | Order Your Ice Cream</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      padding: 20px;
+    }
+    .mid3 {
+      max-width: 900px;
+      margin: auto;
+      border: 2px solid #ffc0cb;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
+    h1, h2 {
+      color: #e75480;
+    }
+    label, p, select, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="number"], select {
+      width: 100%;
+      padding: 8px;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e75480;
+    }
+    .box5 img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .box6 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .box7 {
+      width: 200px;
+      text-align: center;
+      border: 1px solid #ffc0cb;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fffafc;
+    }
+    .box7 img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .box7 p#buy3 {
+      background-color: #ff69b4;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .box7 p#buy3:hover {
+      background-color: #e75480;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mid3">
+    <form action="/submit-your-order" method="post" enctype="multipart/form-data">
+      <div class="box5">
+        <img src="shortlogo.webp" alt="Photo Ice Cream">
+      </div>
+
+      <h1>Scoopsy – IcePopLane </h1>
+      <p><strong>Price:</strong> Rs. more than  400.00 will acepted</p>
+      <p>A special ice cream treat that captures your sweetest memories perfectly!</p>
+
+      <h2>Choose Quantity</h2>
+      <select name="weight" required>
+        <option value="1L">1 Litre</option>
+        <option value="2L">2 Litres</option>
+        <option value="3L">3 Litres</option>
+      </select>
+
+      <h2>Select Flavour</h2>
+      <select name="flavour" required>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Butterscotch">Butterscotch</option>
+        <option value="Vanilla">Vanilla</option>
+        <option value="Other">Other (type below)</option>
+      </select>
+      <input type="text" name="other_flavour" placeholder="Type your custom flavour here">
+
+      <h2>Dietary Preference</h2>
+      <label><input type="radio" name="dietary" value="Eggless" required> Eggless</label>
+      <label><input type="radio" name="dietary" value="Regular" required> Regular</label>
+
+      <h2>Number of Packs</h2>
+      <input type="number" name="quantity" min="1" value="1" required>
+
+      <h2>Upload Your Photo Design</h2>
+      <input type="file" name="photo_image" accept="image/*" required>
+
+      <br>
+      <button type="submit">Place Order</button>
+    </form>
+
+    <!-- Other popular ice cream items -->
+    <h1 style="margin-top: 60px;">🍨 Popular Scoopsy Specials</h1>
+    <div class="box6">
+      <div class="box7">
+        <img src="o1.jpeg" alt="Strawberry Delight">
+        <h1>Strawberry Delight</h1>
+        <p>Rs. 600.00</p>
+        <p id="buy3">BUY</p>
+      </div>
+      <div class="box7">
+        <img src="o3.jpeg" alt="Blueberry Bliss">
+        <h1>Blueberry Bliss</h1>
+        <p>Rs. 550.00</p>
+        <p id="buy3">BUY</p>
+      </div>
+      <div class="box7">
+        <img src="o2.jpeg" alt="Mango Roar">
+        <h1>Mango Roar</h1>
+        <p>Rs. 400.00</p>
+        <p id="buy3">BUY</p>
+      </div>
+      <div class="box7">
+        <img src="o4.jpeg" alt="Minion babbulgam Mint">
+        <h1>Minion babbulgam Mint</h1>
+        <p>Rs. 420.00</p>
+        <p id="buy3">BUY</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

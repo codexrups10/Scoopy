@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.logo2 img{
+    width: 5%;
+    height: 5%;
+    padding-top: 5px;}
+
+/* navigation bar */
+
+
+#nav{
+    width: 120%;
+    height: 7vh;
+    background-color: pink;
+    
+}
+.navrap{
+    width: 100%;
+    margin: auto; 
+      
+}
+.navrap p{
+    color: gray;
+    padding-top: 6px;
+}
+#nav1{
+    width: 100%;
+    height: 10vh;
+    
+}
+.navrap1{
+    width: 90%;
+    margin: auto;   
+}
+.logo{
+    position: absolute;
+}
+.logo img{
+   height: 10vh
+}
+.menu ul{
+    margin-top: 10px;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    
+    color: navy;
+    text-decoration: none;
+    font-size: 15px;
+    /* margin-right: 50px; */
+     padding-right: 10px; 
+     padding-left: 10px;
+    
+    
+}
+
+/* banner */
+
+
+.ban{
+    background-image: url(./images/home\ banner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 10%;
+}
+
+/* middle */
+.mid{
+    width: 100%;
+    height: 350vh;
+    background-color:  rgb(226, 192, 226);
+}
+.midrap{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    /* background-color: azure; */
+}
+.box{
+    margin-top: 40px;
+    width: 250px;
+    height: 30vh;
+    background-color: antiquewhite;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.box h4 {
+    text-align: center;
+}
+.box p{
+    text-align: center;
+}
+#buy{
+    border: 2px solid white;
+    width: 100%;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: crimson;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+
+.foot{
+    width: 100%;
+    height: auto;
+    background-color:  black;
+    /* margin-top: 20PX; */
+}
+.footrap{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    color: aliceblue;
+}
+.box1 {
+    float: left;
+}
+.box1 ul li {
+    /* margin-top: 10px; */
+    /* display: inline; */
+    padding-top: 10px;
+    list-style: none;
+}
+.box1 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    list-style: none;
+    /* border: 2px solid red; */
+   
+}
+
+.logo1 img{
+    width: 50%;
+    height: 50%;
+    padding-top: 25px;
+}
+.end1 p{
+    text-align: center;
+}
